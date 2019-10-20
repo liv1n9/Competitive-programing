@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "g++ compile",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "${file}",
+                "-DTANNHA",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "presentation": {
+                "reveal": "never",
+                "focus": false,
+                "echo": true,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "g++ compile & run",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "${file}",
+                "-DTANNHA",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "&&",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "presentation": {
+                "focus": true,
+                "echo": false,
+                "clear": true,
+                "panel": "shared"
+            }
+        }
+    ]
+}

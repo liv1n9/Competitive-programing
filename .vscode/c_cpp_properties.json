@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "MinGW",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/MinGW/lib/gcc/mingw32/8.2.0/include/**"
+            ],
+            "defines": [
+                "TANNHA"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "C:/MinGW/bin/g++.exe"
+        }
+    ],
+    "version": 4
+}
